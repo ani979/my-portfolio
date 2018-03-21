@@ -3,9 +3,6 @@ version: 0.1
 phases:
   build:
     commands:
-      - sudo npm cache clean -f
-      - sudo npm install -g n
-      - sudo n stable
       - npm install
       - npm run webpack
 artifacts:
