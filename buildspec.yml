@@ -1,7 +1,7 @@
 version: 0.1
 
 phases:
-  pre-build:
+  pre_build:
     commands:
       - sudo npm cache clean -f
       - sudo npm install -g n
