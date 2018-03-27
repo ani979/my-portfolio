@@ -18,3 +18,4 @@ artifacts:
     - images/*
     - styles/*
     - dist/bundle.js
+    - resume/*
