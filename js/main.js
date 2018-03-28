@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExampleWork from './example-work'
+import SocialNetworkHeader from './social-Network-Header';
+import ExampleWork from './example-work';
+
 
 const myWork = [
   {
@@ -36,4 +38,7 @@ const myWork = [
     }
   }
 ]
-ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+
+//ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+
+ReactDOM.render(<SocialNetworkHeader />, document.getElementById('social-network'));
