@@ -3,7 +3,26 @@ import ReactDOM from 'react-dom';
 import SocialNetworkHeader from './social-Network-Header';
 import ExampleWork from './example-work';
 
-
+const mySocialDetails = [
+  {
+    'title': "LinkedIn Profile",
+    'href':"https://www.linkedin.com/in/animesh-shrivastava-13981019/",
+    'cssClass': "fa-linkedin fa-3x",
+    'target':"_blank"
+  },
+  {
+    'title': "GitHub Profile",
+    'href':"https://github.com/ani979/",
+    'cssClass': "fa-github fa-3x",
+    'target':"_blank"
+  },
+  {
+    'title': "My Resume",
+    'href':"/resume/Resume_Animesh.pdf",
+    'cssClass': "fa-file-text fa-=3x",
+    'target':"_self"
+  }
+]
 const myWork = [
   {
     'title':"Work Example",
@@ -40,5 +59,30 @@ const myWork = [
 ]
 
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
-
-ReactDOM.render(<SocialNetworkHeader />, document.getElementById('social-network'));
+// var mql = window.matchMedia('(max-width: 600px)');
+//
+// function screenTest(e) {
+//
+//   if (e.matches) {
+//     console.log(" OK reached");
+//     /* the viewport is 600 pixels wide or less */
+//     mySocialDetails.map(
+//
+//       (soc, idx) => {
+//         soc.cssClass = "fa-linkedin";
+//       }
+//     );
+//   } else {
+//     mySocialDetails.map(
+//
+//       (soc, idx) => {
+//         soc.cssClass = "fa-linkedin";
+//       }
+//     );
+//     console.log("nothing");
+//   }
+//   ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
+// }
+// screenTest(mql);
+// mql.addListener(screenTest);
+ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
