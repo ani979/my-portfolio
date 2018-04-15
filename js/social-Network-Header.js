@@ -5,7 +5,7 @@ class SocialNetworkHeader extends React.Component {
     let socialDetails = this.props.social;
     return(
       <div className="navbar-collapse collapse wrapper">
-        <ul>
+        <ul className="navbar-right">
           {
             socialDetails.map(
               (soc, idx) => {

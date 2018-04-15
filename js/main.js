@@ -7,19 +7,22 @@ const mySocialDetails = [
   {
     'title': "LinkedIn Profile",
     'href':"https://www.linkedin.com/in/animesh-shrivastava-13981019/",
-    'cssClass': "fa-linkedin fa-3x",
+    'cssClass': "fa-linkedin",
+    'cssOrigClass': "fa-linkedin",
     'target':"_blank"
   },
   {
     'title': "GitHub Profile",
     'href':"https://github.com/ani979/",
-    'cssClass': "fa-github fa-3x",
+    'cssClass': "fa-github",
+    'cssOrigClass': "fa-github",
     'target':"_blank"
   },
   {
     'title': "My Resume",
     'href':"/resume/Resume_Animesh.pdf",
-    'cssClass': "fa-file-text fa-=3x",
+    'cssClass': "fa-file-text",
+    'cssOrigClass': "fa-file-text",
     'target':"_self"
   }
 ]
@@ -59,30 +62,28 @@ const myWork = [
 ]
 
 //ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
-// var mql = window.matchMedia('(max-width: 600px)');
-//
-// function screenTest(e) {
-//
-//   if (e.matches) {
-//     console.log(" OK reached");
-//     /* the viewport is 600 pixels wide or less */
-//     mySocialDetails.map(
-//
-//       (soc, idx) => {
-//         soc.cssClass = "fa-linkedin";
-//       }
-//     );
-//   } else {
-//     mySocialDetails.map(
-//
-//       (soc, idx) => {
-//         soc.cssClass = "fa-linkedin";
-//       }
-//     );
-//     console.log("nothing");
-//   }
-//   ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
-// }
-// screenTest(mql);
-// mql.addListener(screenTest);
-ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
+var mql = window.matchMedia('(max-width: 600px)');
+
+function screenTest(e) {
+
+  if (e.matches) {
+    /* the viewport is 600 pixels wide or less */
+    mySocialDetails.map(
+
+      (soc, idx) => {
+        soc.cssClass = soc.cssClass + " fa-1x";
+      }
+    );
+  } else {
+    mySocialDetails.map(
+
+      (soc, idx) => {
+        soc.cssClass = soc.cssOrigClass;
+      }
+    );
+  }
+  ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
+}
+screenTest(mql);
+mql.addListener(screenTest);
+//ReactDOM.render(<SocialNetworkHeader social={mySocialDetails}/>, document.getElementById('social-network'));
