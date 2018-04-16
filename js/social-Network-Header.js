@@ -4,7 +4,7 @@ class SocialNetworkHeader extends React.Component {
   render() {
     let socialDetails = this.props.social;
     return(
-      <div className="navbar-collapse collapse wrapper">
+      <div className="navbar-collapse collapse wrapper navbar-style">
         <ul className="navbar-right">
           {
             socialDetails.map(

@@ -123,12 +123,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap .contner{
 
-	padding-top:22%;
   padding-left:10%;
 	text-align:left;
   vertical-align: bottom;
 	width: 100%;
-  position:absolute;
+  position:relative;
 /*
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -161,10 +160,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .social i {
 
-	color: #000055;
+	color: #ffffff;
 }
 .socialMedia  {
 	padding-top: 20px;
+}
+
+.navbar-style {
+  box-shadow: none;
 }
 
 
