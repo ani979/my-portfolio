@@ -7,23 +7,30 @@ const mySocialDetails = [
   {
     'title': "LinkedIn Profile",
     'href':"https://www.linkedin.com/in/animesh-shrivastava-13981019/",
-    'cssClass': "fa-linkedin",
-    'cssOrigClass': "fa-linkedin",
+    'cssClass': "fab fa-linkedin-in",
+    'cssOrigClass': "fab fa-linkedin-in",
     'target':"_blank"
   },
   {
     'title': "GitHub Profile",
     'href':"https://github.com/ani979/",
-    'cssClass': "fa-github",
-    'cssOrigClass': "fa-github",
+    'cssClass': "fab fa-github",
+    'cssOrigClass': "fab fa-github",
     'target':"_blank"
   },
   {
     'title': "My Resume",
     'href':"/resume/Resume_Animesh.pdf",
-    'cssClass': "fa-file-text",
-    'cssOrigClass': "fa-file-text",
+    'cssClass': "far fa-file-alt",
+    'cssOrigClass': "far fa-file-alt",
     'target':"_self"
+  },
+  {
+    'title': "Blogs",
+    'href':"https://blog.animesh.life",
+    'cssClass': "fab fa-blogger-b",
+    'cssOrigClass': "fab fa-blogger-b",
+    'target':"_blank"
   }
 ]
 const myWork = [

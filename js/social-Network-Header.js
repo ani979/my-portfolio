@@ -15,7 +15,7 @@ class SocialNetworkHeader extends React.Component {
                        title={soc.title}
                        target={soc.target}
                        href={soc.href}>
-                      <i className={"fa " + soc.cssClass}></i>
+                      <i className={soc.cssClass}></i>
                     </a></li>
                 )
               }
