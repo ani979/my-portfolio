@@ -24,14 +24,15 @@ const mySocialDetails = [
     'cssClass': "far fa-file-alt",
     'cssOrigClass': "far fa-file-alt",
     'target':"_self"
-  },
-  {
-    'title': "Blogs",
-    'href':"https://blog.animesh.life",
-    'cssClass': "fab fa-blogger-b",
-    'cssOrigClass': "fab fa-blogger-b",
-    'target':"_blank"
   }
+  
+  // {
+  //   'title': "Blogs",
+  //   'href':"https://blog.animesh.life",
+  //   'cssClass': "fab fa-blogger-b",
+  //   'cssOrigClass': "fab fa-blogger-b",
+  //   'target':"_blank"
+  // }
 ]
 const myWork = [
   {
